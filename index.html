@@ -1,30 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <div class="btn-group-vertical" role="group" aria-label="">
-            <button type="button" class="btn btn-secondary"></button>
-            <button type="button" class="btn btn-secondary"></button>
-            <div class="btn-group" role="group">
-                <button id="dropdownId" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                    
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="#">Inicio</a>
-                    <a class="dropdown-item" href="#">Lecturas</a>
-                    <a class="dropdown-item" href="#">Multimedia</a>
-                    <a class="dropdown-item" href="#">Actividades</a>
-                    <a class="dropdown-item" href="#">Autores</a>
-                </div>
+  <head>
+    <title>Inicio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="navId">
+          <li class="nav-item">
+              <a href="#tab1Id" class="nav-link active">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lecturas</a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#tab2Id">Lectura 1</a>
+                  <a class="dropdown-item" href="#tab3Id">Lectura 2</a>
+                  <a class="dropdown-item" href="#tab4Id">Lectura 3</a>
+                  <a class="dropdown-item" href="#tab5Id">Lectura 4</a>
+                  <a class="dropdown-item" href="#tab6Id">Lectura 5</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Multimedia</a>
+             <div class="dropdown-menu">
+                 <a class="dropdown-item" href="#tab7Id">Multimedia 1</a>
+                 <a class="dropdown-item" href="#tab8Id">Multimedia 2</a>
+             </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Actividades</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#tab9Id">Actividad 1</a>
+                <a class="dropdown-item" href="#tab10Id">Actividad 2</a>
             </div>
-        </div>
-    </div>
-</body>
+         </li>
+          <li class="nav-item">
+                <a href="#tab11Id" class="nav-link">Autor</a>
+          </li>
+      </ul>
+      
+      <!-- Tab panes -->
+      <div class="tab-content">
+          <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+              <div class="container-fluid text-center" >
+                  <h1 class="display-1">Presentación</h1>
+              </div>
+              <div class="container">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta mollitia repudiandae aut ut? Sed praesentium natus aut illum cum! Voluptas non molestias maxime perferendis doloribus accusantium quasi. Culpa earum quos suscipit eveniet, dignissimos magnam, veniam incidunt ut nihil
+                    tempore itaque tempora, perspiciatis ducimus nobis eius laudantium minima neque nemo atque?</p>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+          <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+          <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+          <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+      </div>
+      
+      <script>
+          $('#navId a').click(e => {
+              e.preventDefault();
+              $(this).tab('show');
+          });
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
